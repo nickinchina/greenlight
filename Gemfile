@@ -48,6 +48,7 @@ gem 'omniauth'
 gem 'omniauth-twitter'
 gem 'omniauth-google-oauth2'
 gem 'omniauth-ldap'
+gem 'omniauth-gitlab'
 gem 'omniauth-bn-launcher', '~> 0.1.0'
 
 # BigBlueButton API wrapper.

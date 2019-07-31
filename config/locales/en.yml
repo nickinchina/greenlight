@@ -1,18 +1,18 @@
-# BigBlueButton open source conferencing system - http://www.bigbluebutton.org/.
+# Conference2k open source conferencing system - http://www.Conference2k.org/.
 #
-# Copyright (c) 2018 BigBlueButton Inc. and by respective authors (see below).
+# Copyright (c) 2018 Conference2k Inc. and by respective authors (see below).
 #
 # This program is free software; you can redistribute it and/or modify it under the
 # terms of the GNU Lesser General Public License as published by the Free Software
 # Foundation; either version 3.0 of the License, or (at your option) any later
 # version.
 #
-# BigBlueButton is distributed in the hope that it will be useful, but WITHOUT ANY
+# Conference2k is distributed in the hope that it will be useful, but WITHOUT ANY
 # WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
 # PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.
 #
 # You should have received a copy of the GNU Lesser General Public License along
-# with BigBlueButton; if not, see <http://www.gnu.org/licenses/>.
+# with Conference2k; if not, see <http://www.gnu.org/licenses/>.
 
 # English (en) locale.
 
@@ -21,7 +21,7 @@ en:
     attributes:
       user:
         accepted_terms: "Terms and Conditions"
-  bigbluebutton: BigBlueButton
+  Conference2k: Conference2k
   cancel: Cancel
   copy: Copy
   delete: Delete
@@ -70,8 +70,8 @@ en:
   invalid_login_method: Login failed due to account mismatch. You need to log in with omniauth.
   invite_message: "To invite someone to the meeting, send them this link:"
   landing:
-    about: "%{href} is a simple front-end for your BigBlueButton open-source web conferencing server. You can create your own rooms to host sessions, or join others using a short and convenient link."
-    welcome: Welcome to BigBlueButton.
+    about: "%{href} is a simple front-end for your Conference2k open-source web conferencing server. You can create your own rooms to host sessions, or join others using a short and convenient link."
+    welcome: Welcome to Conference2k.
     video: Watch our tutorial on using Greenlight
     upgrade: Show me how to upgrade to 2.0!
     version: We've released a new version of Greenlight, but your database isn't compatible.

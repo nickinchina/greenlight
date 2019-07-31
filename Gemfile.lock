@@ -169,6 +169,9 @@ GEM
     omniauth-twitter (1.4.0)
       omniauth-oauth (~> 1.1)
       rack
+    omniauth-gitlab (2.0.0)
+      omniauth (~> 1.0)
+      omniauth-oauth2 (~> 1.0)
     parallel (1.12.1)
     parser (2.5.1.0)
       ast (~> 2.4.0)
@@ -339,6 +342,7 @@ DEPENDENCIES
   omniauth-google-oauth2
   omniauth-ldap
   omniauth-twitter
+  omniauth-gitlab
   pg (~> 0.18)
   puma (~> 3.0)
   rails (~> 5.0.7)

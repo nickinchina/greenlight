@@ -1,11 +1,12 @@
 # frozen_string_literal: true
 
 # List of supported Omniauth providers.
-Rails.application.config.providers = [:google, :twitter, :ldap]
+Rails.application.config.providers = [:google, :twitter, :ldap,:gitlab]
 
 # Set which providers are configured.
 Rails.application.config.omniauth_google = ENV['GOOGLE_OAUTH2_ID'].present? && ENV['GOOGLE_OAUTH2_SECRET'].present?
 Rails.application.config.omniauth_twitter = ENV['TWITTER_ID'].present? && ENV['TWITTER_SECRET'].present?
+Rails.application.config.omniauth_gitlab = ENV['GITLAB_KEY'].present? && ENV['GITLAB_SECRET'].present?
 Rails.application.config.omniauth_ldap = ENV['LDAP_SERVER'].present? && ENV['LDAP_UID'].present? &&
                                          ENV['LDAP_BASE'].present? && ENV['LDAP_BIND_DN'].present? &&
                                          ENV['LDAP_PASSWORD'].present?
@@ -44,6 +45,13 @@ Rails.application.config.middleware.use OmniAuth::Builder do
     base: ENV['LDAP_BASE'],
     bind_dn: ENV['LDAP_BIND_DN'],
     password: ENV['LDAP_PASSWORD']
+    
+  provider :gitlab, ENV['GITLAB_KEY'], ENV['GITLAB_SECRET'],
+    {
+       client_options: {
+         site: ENV['GITLAB_SITE']
+       }
+    }
 end
 
 # Redirect back to login in development mode.
